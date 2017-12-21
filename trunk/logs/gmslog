@@ -1,0 +1,24 @@
+[2017-10-12 15:40:44] 0    [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `OtherBehvStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-10-12 15:40:44] 27   [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `ResAllStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-10-12 15:40:45] 1002 [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-10-12 15:40:45] 1003 [main] INFO  gms  - handleConnectors2 matched!
+[2017-10-12 15:40:45] 1148 [pool-9-thread-1] INFO  gms  - gas connected! channel= [id: 0xd31e1a14, /10.10.10.33:53194 => /10.10.10.33:9102] Thread[pool-9-thread-1,5,main]
+[2017-10-12 15:40:45] 1153 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=test_1 1 test
+[2017-10-12 15:40:45] 1153 [pool-9-thread-1] WARN  gms  - File is exists! keyName=test_1
+[2017-10-12 15:41:46] 0    [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `OtherBehvStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-10-12 15:41:46] 37   [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `ResAllStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-10-12 15:41:47] 1032 [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-10-12 15:41:47] 1032 [main] INFO  gms  - handleConnectors2 matched!
+[2017-10-12 15:41:48] 1201 [pool-9-thread-1] INFO  gms  - gas connected! channel= [id: 0xf77ecf6a, /10.10.10.33:53231 => /10.10.10.33:9102] Thread[pool-9-thread-1,5,main]
+[2017-10-12 15:41:48] 1204 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=test_1 1 test
+[2017-10-12 15:41:48] 1204 [pool-9-thread-1] WARN  gms  - File is exists! keyName=test_1
+[2017-10-12 15:42:55] 0    [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `OtherBehvStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-10-12 15:42:55] 36   [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `ResAllStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-10-12 15:42:56] 970  [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-10-12 15:42:56] 970  [main] INFO  gms  - handleConnectors2 matched!
+[2017-10-12 15:42:56] 1126 [pool-9-thread-1] INFO  gms  - gas connected! channel= [id: 0x693cf83a, /10.10.10.33:53266 => /10.10.10.33:9102] Thread[pool-9-thread-1,5,main]
+[2017-10-12 15:42:56] 1129 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=test_1 1 test
+[2017-10-12 15:42:56] 1129 [pool-9-thread-1] WARN  gms  - File is exists! keyName=test_1
+[2017-10-12 15:43:20] 24938 [1703790878@qtp-1936628443-3] INFO  gms  - doLogin username=gongadmin
+[2017-10-12 15:43:27] 31313 [1901437049@qtp-1936628443-4] INFO  gms  - srvlist limit=200 curPage=1
+[2017-10-12 15:43:33] 38079 [1901437049@qtp-1936628443-4] INFO  gms  - srvlist limit=200 curPage=1

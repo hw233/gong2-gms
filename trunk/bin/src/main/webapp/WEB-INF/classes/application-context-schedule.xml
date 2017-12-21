@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="sendAllOptReportMailJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="optReportMailService" />
+		<property name="targetMethod" value="sendAllMailDaily" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="sendAllOptReportMailTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="sendAllOptReportMailJobDetail" />
+		</property>
+		<property name="cronExpression">
+			<!-- 每天5点发邮件 -->
+			<value>0 0 ${config.mail.time} * * ?</value>
+		</property>
+	</bean>
+
+	<bean id="quartzFactory"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="sendAllOptReportMailTrigger" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

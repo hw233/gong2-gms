@@ -1,0 +1,98 @@
+[2017-07-26 19:15:03] 0    [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `OtherBehvStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-07-26 19:15:03] 47   [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `ResAllStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-07-26 19:15:04] 970  [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-07-26 19:15:04] 971  [main] INFO  gms  - handleConnectors2 matched!
+[2017-07-26 19:15:04] 1108 [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-07-26 19:15:04] 1108 [main] INFO  gms  - handleConnectors2 matched!
+[2017-07-26 19:15:04] 1112 [pool-9-thread-1] INFO  gms  - gas connected! channel= [id: 0x7ea89b42, /10.10.10.33:63579 => /10.10.10.33:9102] Thread[pool-9-thread-1,5,main]
+[2017-07-26 19:15:04] 1130 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=android_2 2 android
+[2017-07-26 19:15:04] 1130 [pool-9-thread-1] WARN  gms  - File is exists! keyName=android_2
+[2017-07-26 19:15:04] 1130 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=测试_1 1 测试
+[2017-07-26 19:15:04] 1130 [pool-9-thread-1] WARN  gms  - File is exists! keyName=测试_1
+[2017-07-26 19:15:23] 20497 [1207338014@qtp-1936628443-2] INFO  gms  - doLogin username=gongadmin
+[2017-07-26 20:15:06] 3603542 [pool-4-thread-1] WARN  simple.SingleSimpleRpcClient  - [GasClient_10.10.10.33_9102] single simple rpc connection sleep 10.0s to reconnect...
+[2017-07-26 20:15:06] 3603543 [pool-9-thread-120] WARN  gms  - gas disconnected! channel= [id: 0x7ea89b42, /10.10.10.33:63579 :> /10.10.10.33:9102] Thread[pool-9-thread-120,5,main]
+[2017-07-26 20:15:16] 3613626 [New I/O boss #17] ERROR simple.SingleSimpleRpcClient  - [GasClient_10.10.10.33_9102] connect to rpc server error and sleep 5.0s to retry#1
+java.net.ConnectException: Connection refused: /10.10.10.33:9102
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-07-26 20:15:22] 3618754 [pool-9-thread-120] ERROR iohandler.SimpleRpcClientIoHandler  - [GasClient_10.10.10.33_9102] catch exception for channel: 1394400395
+java.net.ConnectException: Connection refused: /10.10.10.33:9102
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-07-26 20:15:22] 3618756 [pool-9-thread-120] INFO  gms  - gas connected! channel= [id: 0xf2be009f, /10.10.10.33:64606 => /10.10.10.33:9102] Thread[pool-9-thread-120,5,main]
+[2017-07-26 20:15:22] 3618770 [pool-9-thread-120] INFO  gms  - registFile on server connected! keyName=android_2 2 android
+[2017-07-26 20:15:22] 3618771 [pool-9-thread-120] WARN  gms  - File is exists! keyName=android_2
+[2017-07-26 20:15:22] 3618771 [pool-9-thread-120] INFO  gms  - registFile on server connected! keyName=测试_1 1 测试
+[2017-07-26 20:15:22] 3618771 [pool-9-thread-120] WARN  gms  - File is exists! keyName=测试_1
+[2017-07-26 20:18:33] 3810635 [pool-4-thread-1] WARN  simple.SingleSimpleRpcClient  - [GasClient_10.10.10.33_9102] single simple rpc connection sleep 10.0s to reconnect...
+[2017-07-26 20:18:33] 3810638 [pool-9-thread-126] WARN  gms  - gas disconnected! channel= [id: 0xf2be009f, /10.10.10.33:64606 :> /10.10.10.33:9102] Thread[pool-9-thread-126,5,main]
+[2017-07-26 20:18:43] 3820666 [New I/O boss #17] ERROR simple.SingleSimpleRpcClient  - [GasClient_10.10.10.33_9102] connect to rpc server error and sleep 5.0s to retry#1
+java.net.ConnectException: Connection refused: /10.10.10.33:9102
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-07-26 20:18:48] 3825676 [pool-9-thread-126] ERROR iohandler.SimpleRpcClientIoHandler  - [GasClient_10.10.10.33_9102] catch exception for channel: 2108153123
+java.net.ConnectException: Connection refused: /10.10.10.33:9102
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-07-26 20:18:48] 3825678 [pool-9-thread-126] INFO  gms  - gas connected! channel= [id: 0xc5cfe297, /10.10.10.33:64840 => /10.10.10.33:9102] Thread[pool-9-thread-126,5,main]
+[2017-07-26 20:18:49] 3825688 [pool-9-thread-126] INFO  gms  - registFile on server connected! keyName=android_2 2 android
+[2017-07-26 20:18:49] 3825688 [pool-9-thread-126] WARN  gms  - File is exists! keyName=android_2
+[2017-07-26 20:18:49] 3825688 [pool-9-thread-126] INFO  gms  - registFile on server connected! keyName=测试_1 1 测试
+[2017-07-26 20:18:49] 3825689 [pool-9-thread-126] WARN  gms  - File is exists! keyName=测试_1
+[2017-07-26 20:22:58] 4075187 [pool-4-thread-1] WARN  simple.SingleSimpleRpcClient  - [GasClient_10.10.10.33_9102] single simple rpc connection sleep 10.0s to reconnect...
+[2017-07-26 20:22:58] 4075188 [pool-9-thread-134] WARN  gms  - gas disconnected! channel= [id: 0xc5cfe297, /10.10.10.33:64840 :> /10.10.10.33:9102] Thread[pool-9-thread-134,5,main]
+[2017-07-26 20:23:08] 4085191 [New I/O boss #17] ERROR simple.SingleSimpleRpcClient  - [GasClient_10.10.10.33_9102] connect to rpc server error and sleep 5.0s to retry#1
+java.net.ConnectException: Connection refused: /10.10.10.33:9102
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

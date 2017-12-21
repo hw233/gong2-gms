@@ -1,0 +1,330 @@
+package com.hadoit.game.fsgame.gms.web.dwr;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.hadoit.game.common.framework.utils.SimpleWebUtils;
+import com.hadoit.game.common.framework.web.security.SecurityContextHolder;
+import com.hadoit.game.common.framework.web.security.SecurityResource;
+import com.hadoit.game.engine.core.protocol.json.GsonFactory;
+import com.hadoit.game.fsgame.gms.meta.OprGroup;
+import com.hadoit.game.fsgame.gms.meta.RunScriptResult;
+import com.hadoit.game.fsgame.gms.meta.ScriptRecord;
+import com.hadoit.game.fsgame.gms.meta.SecurityInfo;
+import com.hadoit.game.fsgame.gms.meta.ServerConfig;
+import com.hadoit.game.fsgame.gms.meta.ServerInfo;
+import com.hadoit.game.fsgame.gms.service.CouponGenRecordService;
+import com.hadoit.game.fsgame.gms.service.GasService;
+import com.hadoit.game.fsgame.gms.service.OprGroupService;
+import com.hadoit.game.fsgame.gms.service.RollMsgService;
+import com.hadoit.game.fsgame.gms.service.ScriptRecordService;
+import com.hadoit.game.fsgame.gms.service.SecurityInfoService;
+import com.hadoit.game.fsgame.gms.service.SendProductService;
+import com.hadoit.game.fsgame.gms.service.ServerInfoService;
+import com.hadoit.game.fsgame.gms.service.SqlExector;
+import com.hadoit.game.fsgame.gms.service.SystemRewardMsgService;
+import com.hadoit.game.fsgame.gms.service.UserEventService;
+import com.hadoit.game.fsgame.gms.service.rpc.LoginXmlRpcClientService;
+import com.hadoit.game.fsgame.gms.utils.FsGameGmsConst;
+
+@Component("adminBean")
+public class AdminBean {
+
+	@Autowired
+	private GasService gasService;
+
+	@Autowired
+	private ServerInfoService serverInfoService;
+
+	@Autowired
+	private ScriptRecordService scriptRecordService;
+
+	@Autowired
+	private SystemRewardMsgService systemRewardMsgService;
+
+	@Autowired
+	private SendProductService sendProductService;
+
+	@Autowired
+	private SecurityInfoService securityInfoService;
+
+	@Autowired
+	private RollMsgService rollMsgService;
+
+	@Autowired
+	private OprGroupService oprGroupService;
+
+	@Autowired
+	private LoginXmlRpcClientService loginXmlRpcClientService;
+
+	@Autowired
+	private CouponGenRecordService couponGenRecordService;
+
+	@Autowired
+	private SqlExector sqlExector;
+
+	@Autowired
+	private UserEventService userEventService;
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void changeMaxOnline(int serverId, String oprGroup, int maxOnline, HttpServletRequest request) {
+		gasService.changeMaxOnline(serverId, oprGroup, maxOnline);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void openSrv(int serverId, String oprGroup, HttpServletRequest request) {
+		gasService.openSrv(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void closeSrv(int serverId, String oprGroup, HttpServletRequest request) {
+		gasService.closeSrv(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void stopSrv(int serverId, String oprGroup, HttpServletRequest request) {
+		gasService.stopSrv(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void flushData(int serverId, String oprGroup, HttpServletRequest request) {
+		gasService.flushData(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public RunScriptResult runScript(int serverId, String oprGroup, String script, HttpServletRequest request) {
+		RunScriptResult r = gasService.runScript(serverId, oprGroup, script);
+		return r;
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public ScriptRecord saveScript(long id, String title, String content) {
+		String userName = SecurityContextHolder.getSessionAuthInfo().getUserName();
+		return scriptRecordService.addOrUpdateScriptRecord(id, title, content, userName);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void deleteScript(long id) {
+		scriptRecordService.deleteScriptRecord(id);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void kickOut(int serverId, String oprGroup, String avatarId) {
+		gasService.kickOut(serverId, oprGroup, avatarId);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void activeAccount(int serverId, String oprGroup, String userId, long dbId) {
+		gasService.activeAccount(serverId, oprGroup, userId, dbId);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void forbidAccount(int serverId, String oprGroup, String userId, long dbId) {
+		gasService.forbidAccount(serverId, oprGroup, userId, dbId, 30 * 24 * 60 * 60); // 30天
+	}
+
+	public String getServerMap() {
+		Map<String, List<ServerInfo>> sm = serverInfoService.getServerMap();
+		String js = GsonFactory.getDefault().toJson(sm);
+		return js;
+	}
+
+	public void changePassword(String oldPassword, String newPassword) {
+		String userName = SecurityContextHolder.getSessionAuthInfo().getUserName();
+		SecurityInfo si = securityInfoService.getSecurityInfoByAccount(userName);
+		if (si == null) {
+			return;
+		}
+
+		if (!si.getPassword().equals(oldPassword)) {
+			return;
+		}
+
+		si.setPassword(newPassword);
+		securityInfoService.updateSecurityInfo(si);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String allowSend(String srmId) {
+		return systemRewardMsgService.allowSend(Long.valueOf(srmId));
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String allowproductSend(String srmId) {
+		return sendProductService.allowSend(Long.valueOf(srmId));
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void refuseSend(String srmId) {
+		systemRewardMsgService.refuseSend(Long.valueOf(srmId));
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void refuseproductSend(String srmId) {
+		sendProductService.refuseSend(Long.valueOf(srmId));
+	}
+
+	public void delSend(long id) {
+		systemRewardMsgService.deleteSystemRewardMsg(id);
+	}
+
+	public void delproductSend(long id) {
+		sendProductService.deleteProductMsg(id);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void allowNotice(String id) {
+		rollMsgService.allowRollMsg(Long.valueOf(id));
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void refuseNotice(String id) {
+		rollMsgService.refuseRollMsg(Long.valueOf(id));
+	}
+
+	public void delRollMsg(long id) {
+		rollMsgService.delRollMsgs(new long[] { id });
+	}
+
+	public String getOprMatchStr(String oprGroup) {
+		OprGroup og = oprGroupService.getOprGroup(oprGroup);
+		if (og == null) {
+			return "";
+		}
+		return og.getOprMatchStr();
+	}
+
+	public String getOprNoticeList(String oprGroup) {
+		return loginXmlRpcClientService.getNoticeList(oprGroup);
+	}
+
+	public String delNotice(String oprGroup, int id) {
+		return loginXmlRpcClientService.delNotice(oprGroup, id);
+	}
+
+	public String updateNotice(String oprGroup, int id, String content) {
+		return loginXmlRpcClientService.updateNotice(oprGroup, id, content);
+	}
+
+	public String addNotice(String oprGroup, String notice) {
+		return loginXmlRpcClientService.addNotice(oprGroup, notice);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String enableCoupon(long cgrId) {
+		return couponGenRecordService.enableCoupon(cgrId);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String disableCoupon(long cgrId) {
+		return couponGenRecordService.disableCoupon(cgrId);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String delCoupons(long cgrId) {
+		return couponGenRecordService.delCouponGenRecord(cgrId);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String enableGlobalCoupon(long gcId, boolean enable) {
+		return couponGenRecordService.enableGlobalCoupon(gcId, enable);
+	}
+
+	public ServerConfig getServerConfig(int serverId, String oprGroup) {
+		return gasService.getServerConfig(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void hotfix(int serverId, String oprGroup) {
+		gasService.hotfix(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void refreshVersion(int serverId, String oprGroup) {
+		gasService.refreshVersion(serverId, oprGroup);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void forceSyncZstData(int serverId, String oprGroup) {
+		gasService.forceSyncZstData(serverId, oprGroup);
+	}
+
+	public void replyFeedback(String oprGroup, String idStr, String replyContent) {
+		loginXmlRpcClientService.replyFeedback(oprGroup, idStr, replyContent);
+	}
+
+	public void removeFeedback(String oprGroup, String idStr) {
+		loginXmlRpcClientService.removeFeedback(oprGroup, idStr);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void resetGuide(int serverId, String oprGroup, String userId, long dbId) {
+		gasService.resetGuide(serverId, oprGroup, userId, dbId);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String redoOrder(String oprGroup, String orderId) {
+		String opName = SecurityContextHolder.getSessionAuthInfo().getUserName();
+		return loginXmlRpcClientService.redoOrder(oprGroup, orderId, opName);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public Map<String, Object> executeSql(int serverId, String oprGroup, String serverType, String sql,
+			HttpServletRequest request) {
+		return sqlExector.executeSql(serverId, oprGroup, serverType, sql);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public String resetPassword(int serverId, String oprGroup, String accountName, HttpServletRequest request) {
+		String ret = loginXmlRpcClientService.resetPassword(oprGroup, accountName, "123456");
+		if ("SUCCESS".equalsIgnoreCase(ret)) {
+			String account = SecurityContextHolder.getSessionAuthInfo().getUserName();
+			String roleType = StringUtils.join(SecurityContextHolder.getSessionAuthInfo().getRoles(), ",");
+			String ip = SimpleWebUtils.getRequestIp(request);
+			userEventService.addEventFromChangePw(account, roleType, ip, accountName, oprGroup, serverId);
+		}
+		return ret;
+	}
+
+	public String getOprMap() {
+		Map<String, List<String>> sm = oprGroupService.getOprMap();
+		String js = GsonFactory.getDefault().toJson(sm);
+		return js;
+	}
+
+	public int unbindGameCenter(int serverId, String oprGroup, String accountName, String avatarId) {
+		int ret = loginXmlRpcClientService.unbindGameCenter(oprGroup, accountName);
+		gasService.kickOut(serverId, oprGroup, avatarId);
+		return ret;
+	}
+	
+	public int unbindGamePhone(int serverId, String oprGroup, String accountName, String avatarId) {
+		int ret = loginXmlRpcClientService.unbindGamePhone(oprGroup, accountName);
+		gasService.kickOut(serverId, oprGroup, avatarId);
+		return ret;
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void jinyanByType(int serverId, String oprGroup, String userId, long dbId, int type) {
+		gasService.jinyanByType(serverId, oprGroup, userId, dbId, type);
+	}
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void changeName(int serverId, String oprGroup, String userId, long dbId, int type) {
+		gasService.changeName(serverId, oprGroup, userId, dbId, type);
+	}
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void changeAvatar(int serverId, String oprGroup, String userId, long dbId, int type) {
+		gasService.changeAvatar(serverId, oprGroup, userId, dbId, type);
+	}
+
+	@SecurityResource(role = FsGameGmsConst.DWR_PUBLIC_ROLE)
+	public void stopJinyan(int serverId, String oprGroup, String userId, long dbId) {
+		gasService.stopJinyan(serverId, oprGroup, userId, dbId);
+	}
+}

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="03d2386f-1328-4c35-b78e-d9bdb6420ab3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gong2-gms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/ALogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/ALogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/JsExportMethod.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/JsExportMethod.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/ReportColumn.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/ReportColumn.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/ReportInfo.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/ReportInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/Reporter.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/annotation/Reporter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/GuankaBaseData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/GuankaBaseData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/GuankaMonsterData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/GuankaMonsterData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/ItemData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/ItemData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/MallData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/MallData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/MonsterData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/MonsterData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/MonsterPrototypeData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/MonsterPrototypeData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/SceneData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/SceneData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/XsydData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/XsydData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/base/LData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/base/LData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/base/LList.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/base/LList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/base/LMap.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/config/data/base/LMap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/BaseDomainDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/BaseDomainDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/BaseLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/BaseLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/CouponCategroyDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/CouponCategroyDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/CouponGenRecordDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/CouponGenRecordDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/GlobalCouponRecordDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/GlobalCouponRecordDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/OprGroupDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/OprGroupDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/RollMsgDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/RollMsgDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/ScriptRecordDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/ScriptRecordDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/SecurityInfoDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/SecurityInfoDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/SendProductDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/SendProductDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/ServerInfoDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/ServerInfoDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/SystemRewardMsgDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/SystemRewardMsgDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/UserEventDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/UserEventDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/UserLogsDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/UserLogsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/CriticalLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/CriticalLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/CurrencyChangeLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/CurrencyChangeLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/ExpChangeLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/ExpChangeLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/GoldChangeLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/GoldChangeLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/GoldRechargeLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/GoldRechargeLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/ItemChangeLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/ItemChangeLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/MoneyChangeLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/MoneyChangeLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/OnlineLogDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/log/OnlineLogDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptDayDataDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptDayDataDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptDayDataForAllDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptDayDataForAllDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptDayDataForOprDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptDayDataForOprDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptGlobalDataDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptGlobalDataDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptGlobalDataForAllDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptGlobalDataForAllDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptGlobalDataForOprDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/OptGlobalDataForOprDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/GoldStatsDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/GoldStatsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/ItemStatsDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/ItemStatsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/OtherBehvStatsDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/OtherBehvStatsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/ResAllStatsDao.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/dao/opt/game/ResAllStatsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/gfs/FileStorage$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/gfs/FileStorage$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/gfs/FileStorage.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/gfs/FileStorage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/gfs/FileStorageManager.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/gfs/FileStorageManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Bean.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Bean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/CouponCategroy.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/CouponCategroy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/CouponGenRecord.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/CouponGenRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/CouponRecord.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/CouponRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/GameAccount.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/GameAccount.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/GlobalCouponRecord.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/GlobalCouponRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ItemInfo.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ItemInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Message.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Notice.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Notice.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/OprGroup.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/OprGroup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Page.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/Page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/PlayBuild.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/PlayBuild.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/PlayMessage.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/PlayMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/PlayerInfo.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/PlayerInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ReportInfo.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ReportInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/RollMsg.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/RollMsg.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/RunScriptResult.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/RunScriptResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ScriptRecord.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ScriptRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/SecurityInfo.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/SecurityInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/SendProduct.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/SendProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ServerConfig.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ServerConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ServerInfo.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/ServerInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/SystemRewardMsg.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/SystemRewardMsg.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/TotalChargeData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/TotalChargeData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/UserEvent.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/UserEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/UserLogs.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/UserLogs.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/UserPrincipal.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/UserPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/AvatarBaseLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/AvatarBaseLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/BaseLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/BaseLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/CriticalLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/CriticalLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/CurrencyChangeLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/CurrencyChangeLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/ExpChangeLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/ExpChangeLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/GoldChangeLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/GoldChangeLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/GoldRechargeLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/GoldRechargeLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/ItemChangeLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/ItemChangeLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/MoneyChangeLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/MoneyChangeLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/OnlineLog.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/log/OnlineLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/BaseOpt.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/BaseOpt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/BaseYunyingOpt.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/BaseYunyingOpt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/MainGlobalData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/MainGlobalData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/MainOptData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/MainOptData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptDayData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptDayData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptDayDataForAll.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptDayDataForAll.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptDayDataForOpr.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptDayDataForOpr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptGlobalData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptGlobalData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptGlobalDataForAll.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptGlobalDataForAll.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptGlobalDataForOpr.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/OptGlobalDataForOpr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/GoldStats.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/GoldStats.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/ItemStats.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/ItemStats.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/OtherBehvStats.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/OtherBehvStats.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/ResAllStats.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/meta/opt/game/ResAllStats.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminClientManager$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminClientManager$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminClientManager.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminClientManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminListener$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminListener$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminListener.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/GasAdminListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/RpcClientData.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/net/RpcClientData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/AdminService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/AdminService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/CouponCategroyService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/CouponCategroyService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/CouponGenRecordService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/CouponGenRecordService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ExporterService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ExporterService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GameStatsService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GameStatsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$2.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$3.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$4.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$5.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$6.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$7.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/GasService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/LogService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/LogService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OprGroupService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OprGroupService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OptDataService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OptDataService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OptReportMailService$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OptReportMailService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OptReportMailService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OptReportMailService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OutterService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/OutterService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/RollMsgQuartzJobBean.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/RollMsgQuartzJobBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/RollMsgService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/RollMsgService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ScheduleManager.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ScheduleManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ScriptRecordService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ScriptRecordService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SecurityInfoService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SecurityInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SendProductService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SendProductService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ServerInfoService$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ServerInfoService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ServerInfoService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/ServerInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$1$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$2.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$3$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$3.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$4.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$5.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$InnerExector.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector$InnerExector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SqlExector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SystemRewardMsgService$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SystemRewardMsgService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SystemRewardMsgService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/SystemRewardMsgService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/UserEventService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/UserEventService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$2.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$3.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$4.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$5.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$6.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/service/rpc/LoginXmlRpcClientService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/BadRequestException.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/BadRequestException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FormulaUtils.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FormulaUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGasRpcConst.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGasRpcConst.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGmsConst.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGmsConst.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGmsUtils$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGmsUtils$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGmsUtils.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/FsGameGmsUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/LoggerUtils.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/LoggerUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/NPSContextLoaderListener.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/NPSContextLoaderListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/PackageUtil.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/utils/PackageUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/api/AccountApiController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/api/AccountApiController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/AbstractController$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/AbstractController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/AbstractController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/AbstractController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/AdminController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/AdminController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/CouponManagerController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/CouponManagerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/GameStatsController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/GameStatsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/GmsControllerAdvice.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/GmsControllerAdvice.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/GmsOutterController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/GmsOutterController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/OperationController$1.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/OperationController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/OperationController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/OperationController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/PlayerManangerController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/PlayerManangerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/ReportMangerController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/ReportMangerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/SecurityManagerController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/SecurityManagerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/ServerManagerController.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/controller/ServerManagerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/dwr/AdminBean.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/hadoit/game/fsgame/gms/web/dwr/AdminBean.class" />
+    </list>
+    <ignored path="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="172" column="30" lean-forward="false" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>annotation.servlet</find>
+      <find>tomcat</find>
+      <find>javax.servlet.anno</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="819" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gong2-gms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.gonggms">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="gonggms" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9901/gonggms/gms/dashboard" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$/src/main/webapp">
+          <settings>
+            <option name="CONTEXT_PATH" value="/gonggms" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_gong2-gms" />
+        <option name="JNDI_PORT" value="1097" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64698" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SpringMvcView">
+    <option name="showControllers" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/bin" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/bin" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03d2386f-1328-4c35-b78e-d9bdb6420ab3" name="Default" comment="" />
+      <created>1511766126533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511766126533</updated>
+      <workItem from="1511766129577" duration="2246000" />
+      <workItem from="1511866800284" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2333000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="819" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33951497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/gmslog_2017-08-01.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="172" column="30" lean-forward="false" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

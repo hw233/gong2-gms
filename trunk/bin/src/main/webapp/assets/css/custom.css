@@ -1,0 +1,23 @@
+/* here you can put your own css to customize and override the theme */
+form label.error, label.error {
+	color: red
+}
+
+input.error {
+	border: 1px dotted red
+}
+
+textarea.error {
+	border: 1px dotted red
+}
+
+.log {
+	padding: 10px;
+	height: 500px;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
+.tooltip-inner {
+	max-width: 800px;
+}

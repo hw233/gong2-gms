@@ -1,0 +1,64 @@
+package com.hadoit.game.fsgame.gms.web.controller;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jmx.export.metadata.ManagedOperation;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.hadoit.game.common.framework.web.security.SecurityContextHolder;
+import com.hadoit.game.common.framework.web.security.UserDetails;
+import com.hadoit.game.common.lang.DataUtils;
+import com.hadoit.game.common.lang.Pair;
+import com.hadoit.game.engine.core.protocol.json.GsonFactory;
+import com.hadoit.game.fsgame.gms.dao.SecurityInfoDao;
+import com.hadoit.game.fsgame.gms.gfs.FileStorageManager;
+import com.hadoit.game.fsgame.gms.meta.Notice;
+import com.hadoit.game.fsgame.gms.meta.Page;
+import com.hadoit.game.fsgame.gms.meta.PlayerInfo;
+import com.hadoit.game.fsgame.gms.meta.RollMsg;
+import com.hadoit.game.fsgame.gms.meta.SecurityInfo;
+import com.hadoit.game.fsgame.gms.meta.SendProduct;
+import com.hadoit.game.fsgame.gms.meta.ServerInfo;
+import com.hadoit.game.fsgame.gms.meta.SystemRewardMsg;
+import com.hadoit.game.fsgame.gms.meta.log.CriticalLog;
+import com.hadoit.game.fsgame.gms.meta.log.CurrencyChangeLog;
+import com.hadoit.game.fsgame.gms.meta.log.ExpChangeLog;
+import com.hadoit.game.fsgame.gms.meta.log.GoldChangeLog;
+import com.hadoit.game.fsgame.gms.meta.log.ItemChangeLog;
+import com.hadoit.game.fsgame.gms.meta.log.MoneyChangeLog;
+import com.hadoit.game.fsgame.gms.service.GasService;
+import com.hadoit.game.fsgame.gms.service.LogService;
+import com.hadoit.game.fsgame.gms.service.OprGroupService;
+import com.hadoit.game.fsgame.gms.service.RollMsgService;
+import com.hadoit.game.fsgame.gms.service.SendProductService;
+import com.hadoit.game.fsgame.gms.service.ServerInfoService;
+import com.hadoit.game.fsgame.gms.service.SystemRewardMsgService;
+import com.hadoit.game.fsgame.gms.service.rpc.LoginXmlRpcClientService;
+import com.hadoit.game.fsgame.gms.utils.FsGameGmsConst;
+import com.hadoit.game.fsgame.gms.utils.FsGameGmsUtils;
+
+@Controller
+public class ReportMangerController extends AbstractController {
+
+
+	@RequestMapping(params = { "module=userreport", "action=list" }, value = "/rm")
+	public ModelAndView playerList(HttpServletRequest request) {
+        Map<String, Object> map=new HashMap<String, Object>();
+		return getCommonModelAndView("/rm/userreport_list",map,request);
+	}
+
+
+
+}

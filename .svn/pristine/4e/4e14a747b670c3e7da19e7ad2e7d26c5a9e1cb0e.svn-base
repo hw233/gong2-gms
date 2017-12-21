@@ -1,0 +1,190 @@
+package com.hadoit.game.fsgame.gms.service;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Member;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang.ObjectUtils;
+import org.apache.commons.lang.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.springframework.stereotype.Component;
+
+import com.hadoit.game.common.lang.DataUtils;
+import com.hadoit.game.common.lang.ReflectionUtils;
+import com.hadoit.game.fsgame.gms.annotation.ReportColumn;
+import com.hadoit.game.fsgame.gms.annotation.ReportInfo;
+import com.hadoit.game.fsgame.gms.annotation.Reporter;
+import com.hadoit.game.fsgame.gms.utils.FormulaUtils;
+import com.hadoit.game.fsgame.gms.utils.LoggerUtils;
+
+@Component("exporterService")
+public class ExporterService {
+
+	private Field getField(Class<?> clazz, String fieldName) {
+		Class<?> tmpClass = clazz;
+		do {
+			try {
+				Field f = tmpClass.getDeclaredField(fieldName);
+				return f;
+			} catch (NoSuchFieldException e) {
+				tmpClass = tmpClass.getSuperclass();
+			}
+		} while (tmpClass != null);
+
+		return null;
+	}
+
+	private ReportColumn getReportColumn(Class<?> clazz, String propName) {
+		Field field = getField(clazz, propName);
+		ReportColumn rc = null;
+		if (field != null) {
+			rc = field.getAnnotation(ReportColumn.class);
+		}
+		if (rc == null) {
+			Method method = ReflectionUtils.getReadMethod(clazz, propName);
+			if (method != null) {
+				rc = method.getAnnotation(ReportColumn.class);
+			}
+		}
+		return rc;
+	}
+
+	private Member getFieldOrReadMethod(Class<?> clazz, String fieldName) {
+		Field f = getField(clazz, fieldName);
+		if (f != null) {
+			return f;
+		}
+		Method method = ReflectionUtils.getReadMethod(clazz, fieldName);
+		if (method != null) {
+			return method;
+		}
+		return null;
+	}
+
+	private String transferData(String script, Object obj, Object val) {
+		if (StringUtils.isBlank(script)) {
+			return ObjectUtils.toString(val);
+		}
+		Map<String, Object> params = new HashMap<String, Object>();
+		params.put("val", val);
+		params.put("obj", obj);
+		Object ret = FormulaUtils.eval(script, params);
+		return ObjectUtils.toString(ret);
+	}
+
+	private Object getValue(Object obj, String propName, Map<String, Object> fixedColumnVals) {
+		Member member = getFieldOrReadMethod(obj.getClass(), propName);
+		Object propValue = null;
+		try {
+			if (member != null) {
+//				Class<?> t = null;
+//				if (member instanceof Field) {
+//					t = ((Field) member).getType();
+//				} else {
+//					t = ((Method) member).getReturnType();
+//				}
+//				if (t.isPrimitive() || Number.class.isAssignableFrom(t)) {
+//					propValue = ReflectionUtils.getProperty(obj, propName);
+////					 DecimalFormat df = new DecimalFormat("0.0000");
+////					 propValue = df.format(propValue);
+//				} else {
+//					propValue = ReflectionUtils.getBeanUtilsInstance().getProperty(obj, propName);
+//				}
+				propValue = ReflectionUtils.getProperty(obj, propName);
+			} else {
+				propValue = DataUtils.getMapString(fixedColumnVals, propName, "");
+			}
+		} catch (Exception e) {
+			LoggerUtils.error(e);
+		}
+		return propValue;
+	}
+
+	public String generateXlsWorkbook(HSSFWorkbook workbook, String reportName, List<?> datas) {
+		return generateXlsWorkbook(workbook, reportName, datas, null);
+	}
+
+	public String generateXlsWorkbook(HSSFWorkbook workbook, String reportName, List<?> datas,
+			Map<String, Object> fixedColumnVals) {
+		if (CollectionUtils.isEmpty(datas)) {
+			return null;
+		}
+
+		Class<?> ct = datas.get(0).getClass();
+		Reporter reporter = ct.getAnnotation(Reporter.class);
+		if (reporter == null || reporter.value().length == 0) {
+			return null;
+		}
+		ReportInfo[] ris = reporter.value();
+		ReportInfo targetReportInfo = null;
+		for (ReportInfo ri : ris) {
+			if (StringUtils.equals(reportName, ri.name())) {
+				targetReportInfo = ri;
+				break;
+			}
+		}
+		if (targetReportInfo == null) {
+			LoggerUtils.warn("Report " + reportName + " head not exists! ");
+			return null;
+		}
+		if (fixedColumnVals == null) {
+			fixedColumnVals = new HashMap<String, Object>();
+		}
+		String sheetName = targetReportInfo.sheetName();
+		String[] headProps = targetReportInfo.headProps();
+		String[] headNames = targetReportInfo.headNames();
+		String fileName = StringUtils.isBlank(targetReportInfo.fileName()) ? sheetName : targetReportInfo.fileName();
+		if (headProps.length != headNames.length) {
+			LoggerUtils.warn("Report " + reportName + " head error! headPropsSize=" + headProps.length
+					+ ", headNamesSize=" + headNames.length);
+			return null;
+		}
+		if (workbook == null) {
+			workbook = new HSSFWorkbook();
+		}
+		HSSFSheet sheet = workbook.createSheet(sheetName);
+		HSSFRow row = sheet.createRow((short) 0);
+		HSSFCell cell = null;
+		int nColumn = headNames.length;
+		int nRows = datas.size();
+
+		String[] propScripts = new String[headNames.length];
+		// 写入各个字段的名称
+		for (int i = 0; i < nColumn; i++) {
+			cell = row.createCell((i));
+			cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+			cell.setCellValue(headNames[i]);
+			ReportColumn rc = getReportColumn(ct, headProps[i]);
+			if (rc != null) {
+				propScripts[i] = rc.transferScript();
+			}
+		}
+
+		// 写入值
+		for (int i = 1; i <= nRows; i++) {
+			row = sheet.createRow(i);
+			Object obj = datas.get(i - 1);
+			for (int j = 0; j < nColumn; j++) {
+				cell = row.createCell(j);
+				cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+				String propName = headProps[j];
+				try {
+					Object rVal = getValue(obj, propName, fixedColumnVals);
+					cell.setCellValue(transferData(propScripts[j], obj, rVal));
+				} catch (Exception e) {
+					LoggerUtils.error(e);
+					continue;
+				}
+			}
+		}
+		return fileName;
+	}
+
+}

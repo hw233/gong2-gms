@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gong2-gms:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="gong-gms.war">
+      <element id="artifact" artifact-name="gong2-gms:war exploded" />
+    </root>
+  </artifact>
+</component>

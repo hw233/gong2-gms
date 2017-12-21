@@ -1,0 +1,40 @@
+package com.hadoit.game.fsgame.gms.utils;
+
+public class FsGameGasRpcConst {
+	// gms -> admin
+	public static final String ADMIN_REQ_HANDSHAKE = "admin.handshake";
+	public static final String ADMIN_REQ_OPEN_SERVER = "admin.openServer";
+	public static final String ADMIN_REQ_CLOSE_SERVER = "admin.closeServer";
+	public static final String ADMIN_REQ_STOP_SERVER = "admin.stopServer";
+	public static final String ADMIN_REQ_MAX_ONLINE = "admin.maxOnline";
+	public static final String ADMIN_REQ_FLUSH_DATA = "admin.flushData";
+	public static final String ADMIN_REQ_SERVER_CONFIG = "admin.serverConfig";
+	public static final String ADMIN_REQ_RUN_SCRIPT = "admin.runScript";
+	public static final String ADMIN_REQ_GET_PLAYER_LIST = "admin.getPlayerList";
+	public static final String ADMIN_REQ_SEARCH_PLAYER_LIST = "admin.searchPlayerList";
+	public static final String ADMIN_REQ_SEND_MAIL = "admin.sendMail";
+	public static final String ADMIN_REQ_SEND_REWARD = "admin.sendReward";
+	public static final String ADMIN_REQ_KICK_OUT = "admin.kickOut";
+	public static final String ADMIN_REQ_FORBID_ACCOUNT = "admin.forbidAccount";
+	public static final String ADMIN_REQ_ACTIVE_ACCOUNT = "admin.activeAccount";
+	public static final String ADMIN_REQ_STOP_CHAT = "admin.stopChat";
+	public static final String ADMIN_REQ_OPEN_CHAT = "admin.openChat";
+	public static final String ADMIN_REQ_RESET_GUIDE = "admin.resetGuide";
+	public static final String ADMIN_REQ_ZHUANPAN_EDIT = "admin.zhuanpanEdit";
+	public static final String ADMIN_REQ_QUERY_FOR_LIST = "admin.queryForList";
+	public static final String ADMIN_REQ_EXECUTE_UPDATE = "admin.executeUpdate";
+	public static final String ADMIN_REQ_SEND_ROLL_MSG = "admin.sendRollMsg";
+	public static final String ADMIN_REQ_HOT_FIX = "admin.hotfix";
+	public static final String ADMIN_REQ_REFRESH_VERSION = "admin.refreshVersion";
+	public static final String ADMIN_REQ_FORCE_SYNC_ZST_DATA = "admin.forceSyncZstData";
+	public static final String ADMIN_LOGIN_REQ_PAY_ADD_ITEM = "admin.login.payAddItem";
+	public static final String ADMIN_REQ_QUERY_FOR_LIST_TO_GLOBAL = "admin.queryForListToGlobal";
+	public static final String ADMIN_REQ_EXECUTE_UPDATE_TO_GLOBAL = "admin.executeUpdateToGlobal";
+	public static final String ADMIN_REQ_JIN_YAN = "admin.jinyan";
+	public static final String ADMIN_REQ_CHANGE_NAME = "admin.changename";
+	public static final String ADMIN_REQ_CHANGE_AVATAR = "admin.changeavatar";
+	public static final String ADMIN_REQ_STOP_JIN_YAN = "admin.stopJinyan";
+
+	// admin -> gms
+	public static final String ADMIN_GMS_RES_ON_SAY = "gms.onSay";
+}

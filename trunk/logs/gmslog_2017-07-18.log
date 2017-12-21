@@ -1,0 +1,12 @@
+[2017-07-18 23:58:02] 0    [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `OtherBehvStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-07-18 23:58:02] 57   [main] INFO  domain.SimpleDomainConfig  - [SQL UPDATE] ALTER TABLE `ResAllStats` MODIFY COLUMN `num` double precision DEFAULT 0
+[2017-07-18 23:58:04] 1995 [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-07-18 23:58:04] 1996 [main] INFO  gms  - handleConnectors2 matched!
+[2017-07-18 23:58:04] 2235 [main] INFO  gms  - handleConnectors key=10.10.10.33_9102
+[2017-07-18 23:58:04] 2236 [main] INFO  gms  - handleConnectors2 matched!
+[2017-07-18 23:58:04] 2240 [pool-9-thread-1] INFO  gms  - gas connected! channel= [id: 0xa6489210, /10.10.10.33:53389 => /10.10.10.33:9102] Thread[pool-9-thread-1,5,main]
+[2017-07-18 23:58:04] 2249 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=android_2 2 android
+[2017-07-18 23:58:04] 2250 [pool-9-thread-1] WARN  gms  - File is exists! keyName=android_2
+[2017-07-18 23:58:04] 2250 [pool-9-thread-1] INFO  gms  - registFile on server connected! keyName=测试_1 1 测试
+[2017-07-18 23:58:04] 2250 [pool-9-thread-1] WARN  gms  - File is exists! keyName=测试_1
+[2017-07-18 23:58:11] 9667 [196502010@qtp-1580893732-3] INFO  gms  - doLogin username=gongadmin
